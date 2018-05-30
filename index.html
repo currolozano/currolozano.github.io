@@ -2,6 +2,23 @@
  
   <head>
     <title>Hola mundo</title>
+    <script>
+        var i = 0
+        function clickLink() {
+            i++;
+            if (i == 1) {
+                document.getElementById("clicks").innerHTML = i; 
+            }
+            else
+            {
+                document.getElementById("clicks").innerHTML = i;
+            }
+        }
+        function Reset() {
+            i = 0;
+            document.getElementById("clicks").innerHTML = i;
+        }
+        </script>
   </head>
   <body>
    <h1>Pagina de Curro </h1>
@@ -15,13 +32,7 @@
     <h2>EL BOTON DEL DESTINO</h2>
        <button type="button" onclick="alert('TIENES 10000000000 VIRUSES EN TU PC ASI QUE OLVIDATE XD!')">Pinchame XD!</button>
    <button type="button" onclick="document.href='http://google.com'">Google</button>
-   window.onload = function(){
-    var contador = 0;
-    document.getElementById("pinchame").onclick = function(){
-        contador++;
-        alert(contador);
-    }
-}
+   
   </body>
 
 </html>
