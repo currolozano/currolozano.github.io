@@ -1,22 +1,27 @@
 <html>
- 
-  <head>
-    <title>Hola mundo</title>
-  </head>
- 
-  <body>
-   <h1>Pagina de Curro </h1>
-    <p>holaaaa esta es mi pagina</p>
- 
-    <blocquote>
-      Se que no es mucho pero meh almenos es para aprender a crear mi pagina web desde cero XD
-      <cite>Ryusei43</cite>
-    </blocquote>
-    <hr />
-    <h2>EL BOTON DEL DESTINO</h2>
-       <button type="button" onclick="alert('TIENES 10000000000 VIRUSES EN TU PC ASI QUE OLVIDATE XD!')">Pinchame XD!</button>
-   <button type="button" onclick="document.href='http://google.com'">Google</button>
-   
-  </body>
-
+    <head>
+        <title>Contador de clicks</title>
+        <script>
+        var i = 0
+        function clickLink() {
+            i++;
+            if (i == 1) {
+                document.getElementById("clicks").innerHTML = i; 
+            }
+            else
+            {
+                document.getElementById("clicks").innerHTML = i;
+            }
+        }
+        function Reset() {
+            i = 0;
+            document.getElementById("clicks").innerHTML = i;
+        }
+        </script>
+    </head>
+    <body>
+        <a href="javascript:clickLink();">Click aquí</a>
+        <p>Clicks <span id="clicks">0</span></p>
+        <a href="javascript:Reset();">Reset</a>
+    </body>
 </html>
