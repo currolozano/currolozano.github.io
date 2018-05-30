@@ -15,7 +15,13 @@
     <h2>EL BOTON DEL DESTINO</h2>
        <button type="button" onclick="alert('TIENES 10000000000 VIRUSES EN TU PC ASI QUE OLVIDATE XD!')">Pinchame XD!</button>
    <button type="button" onclick="document.href='http://google.com'">Google</button>
-    ​<p id="pinchame">lorem ipsum...</p>​​​​​​​​​​​​​​​​​​​​​​​​
+   window.onload = function(){
+    var contador = 0;
+    document.getElementById("pinchame").onclick = function(){
+        contador++;
+        alert(contador);
+    }
+}
   </body>
 
 </html>
