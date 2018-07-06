@@ -1,25 +1,27 @@
-<html> formulario.html
-  <head> <title>Formulario de pedidos</title> </head>
-     <form action="procespedido.php" method=post>
-     <table border=0>
-     <tr bgcolor=#cccccc>
-     <td width=150>Artículo</td> <td width=15>Cantidad</td>
-     </tr>
-     <tr>
-     <td>Neumáticos</td> <td align="center"><input type="text" name="neumcant" size="3“
-     maxlength="3"></td>
-     </tr>
-     <tr>
-     <td>Aceite</td> <td align="center"><input type="text" name="aceitecant" size="3"
-     maxlength="3"></td>
-     </tr>
-     <tr>
-     <td>Bujías</td> <td align="center"><input type="text" name="bujcant" size="3“
-      maxlength="3"></td>
-     </tr>
-     <tr>
-     <td colspan="2" align="center"><input type="submit" value="Enviar Pedido"></td>
-     </tr>
-     </table>
-   </form>
-</html>
+<html>
+  <body>
+    <form name="inscripcion" method="post" action="mailto:direccion@correo.es">
+    Nombre:
+    <br>
+    <input type="text" name="nombre" size="20" maxlength="20">
+    <br><br>
+    Apellidos:
+    <br>
+    <input type="text" name="apellidos" maxlength="60" size="60">
+    <br><br>
+    Facultad:
+    <br>
+    <input type="text" name="facultad" size="60" maxlength="60">
+    <br><br>
+    Estudios:
+    <br>
+    <select name="estudios">
+    <option>Primer Ciclo</option>
+    <option>Segundo Ciclo</option>
+    <option>Doctorado</option>
+    </select>
+    <br><br>
+    <input type="submit" name="Submit" value="Enviar">
+    </form>
+  <body>  
+<html>    
