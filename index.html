@@ -1,49 +1,25 @@
-<html>
-  <head>
-    <title>
-     Formulario personal
-    </title>
-    
-  <head>
-    <body>
-      <form>
-      <h1 align="center">Encuesta personal</h1>
-      
-      <hr/>
-      
-     <p>¿Como te llamas?</p>
-      <input type="text" name="CajaNombre">
-    <br>  
-     <p>¿Cuantos años tienes?</p>
-      <input type="text" name="CajaEdad"> 
-    <br>
-      <p>¿Cual es tu profesion?</p>
-       <input type="text" name="CajaProfesion">
-    <br>
-      <p>¿cuantos años llevas en la empresa?</p>
-       <input type="text" name="CajaAñosEmpresa">
-    <br> 
-      <p>¿Que metodo de transporte empleas para ir al trabajo</p>
-       <select name="transporte">
-
-         <option>Coche</option>
-
-         <option>Renfe</option>
-
-         <option>Tren</option>
-         
-         <option>Moto</option>
-         
-         <option>Andando</option>
-
-       </select>
-      <br>
-      <br>
-      <br>
-      <br>
-     <input type="reset" value="Borrar datos"></input>
-      </form>
-      <body>
-      
-    
-<html>
+<html> formulario.html
+  <head> <title>Formulario de pedidos</title> </head>
+     <form action="procespedido.php" method=post>
+     <table border=0>
+     <tr bgcolor=#cccccc>
+     <td width=150>Artículo</td> <td width=15>Cantidad</td>
+     </tr>
+     <tr>
+     <td>Neumáticos</td> <td align="center"><input type="text" name="neumcant" size="3“
+     maxlength="3"></td>
+     </tr>
+     <tr>
+     <td>Aceite</td> <td align="center"><input type="text" name="aceitecant" size="3"
+     maxlength="3"></td>
+     </tr>
+     <tr>
+     <td>Bujías</td> <td align="center"><input type="text" name="bujcant" size="3“
+      maxlength="3"></td>
+     </tr>
+     <tr>
+     <td colspan="2" align="center"><input type="submit" value="Enviar Pedido"></td>
+     </tr>
+     </table>
+   </form>
+</html>
